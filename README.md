@@ -25,18 +25,6 @@ To open a FITS or MEF file with ds9:
 - `open_fits.ds9.bat`
 - `open_mef.ds9.bat`
 
-## Display Class
-This class defines Azcam's image display interface to SAO's ds9 image display. 
-It is usually instantiated as the *display* object for both server and clients.
-
-Depending on system configuration, the *display* object may be available 
-directly from the command line, e.g. `display.display("test.fits")`.
-
-Usage Example:
-
-    rois = azcam.api.display.get_rois(2, 'detector')  
-    azcam.display.api.display(test.fits')
-
 ## Notes
 It may be helpful to remove all associations of .fits files in the registry and then only
 execute the above batch files.  Do not directly associate .fits files with ds9.exe.
